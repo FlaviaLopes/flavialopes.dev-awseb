@@ -1,0 +1,29 @@
+<div class="site-paper-cont">
+    <div class="pf-grid">
+        <div class="pf-grid-sizer"></div>
+        {% for it in projects %}
+        <article class="pf-grid-item">
+            <a class="pf-project" href="{{ it.project_link }}">
+                <figure class="pf-figure" width="380" height="253">
+                    <img src="{{ it.image.url }}"
+                         alt="{{ it.title }}">
+                    <figcaption>{{ it.title }}</figcaption>
+                </figure>
+
+                <div class="pf-caption text-center">
+                    <div class="valign-table">
+                        <div class="valign-cell">
+                            <h2 class="pf-title text-upper">{{ it.title }}</h2>
+                            <div class="pf-text clear-mrg">
+                                <div data-url="{{ it.project_ulr }}"></div>
+                                <p>{{ it.description }}</p>
+                                <div data-url="{{ it.project_url }}"></div>
+                                <p></p></div>
+                            <span class="pf-btn btn btn-primary">Saiba Mais</span></div>
+                    </div>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>

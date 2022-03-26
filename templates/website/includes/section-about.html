@@ -1,0 +1,20 @@
+<h2 class="title-lg text-upper">{{ about.title }}</h2>
+<p><b>{{ about.introduction }}</b></p>
+<p>{{ about.text }}</p>
+<div class="share-box text-center clearfix">
+    <div class="share-box">
+        <div class="share-art">
+            <section>
+                <p>
+                    {% for social, social_link in share_on.items %}
+                        <a class="share-btn btn btn-bordered btn-upper"
+                           href="{{ social_link }}" title="Share on {{ social|title }}">
+                            <i class="site-icon site-icon-{{ social }}"></i>
+                        </a>
+                    {% endfor %}
+                </p>
+            </section>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>

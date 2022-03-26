@@ -1,0 +1,91 @@
+{% include 'website/includes/head.html' %}
+
+<body class="site site-layers-1 site-nav-on site-nav-type2 site-main-nav-on site-side-box-on site-sidebar-on"
+      data-color="#c0e3e7">
+
+<div class="site-wrapper">
+    <header id="siteHeader" class="site-logo-in">
+        {% include 'website/includes/header.html' %}
+    </header>
+    <div id="siteContainer" class="site-container">
+        <!--aside à esquerda -->
+        <div id="siteSideBoxWrap">
+            <div id="siteSideBox" class="clear-mrg">
+                <div class="site-side-box-1 clear-mrg">
+                    <div id="wdg-sticky-start"></div>
+                    <!--card à esquerda -->
+                    <aside class="widget clearfix widget_card">
+                        <div class="site-card bg-primary text-center">
+                            {% include 'website/includes/aside-avatar.html' %}
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <!-- conteúdo do meio, principal -->
+        <div class="site-container-sm">
+            <div class="site-paper-layers site-animate">
+                <div class="site-paper clear-mrg clearfix">
+                    <div class="site-paper-cont paper-padd clear-mrg">
+                        <section id="about" class="section padd-box">
+                            <div class="row text-center">
+                                <div class="col-sm-12 clear-mrg text-box">
+                                    {% include 'website/includes/section-about.html' %}
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear-mrg site-paper-layers site-animate clearfix">
+                <div class="site-paper site-paper-cont paper-padd clear-mrg">
+                    <section class="section padd-box">
+                        <div class="row text-center">
+                            <div class="col-sm-12 clear-mrg text-box">
+                                <h2 class="title-lg text-upper">Projetos</h2>
+                                {% include 'website/includes/section-projects.html' %}
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="siteSidebar">
+        <button id="siteSidebarClose" class="btn btn-icon btn-light btn-shade"><span
+                class="site-icon site-icon-close"></span>
+        </button>
+        <div id="siteSidebarInner">
+            <!--menu topo - (mídias menores)-->
+            <nav id="siteMainNavSm" class="hidden-lg hidden-md text-center">
+                <ul class="clear-list">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-90 current_page_item menu-item-148">
+                        <a href="">Home</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a
+                            href="">Blog</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </div>
+
+    <footer id="siteFooter" class="site-container-lg">
+        <div class="site-container">
+            <div class="site-container-sm clear-mrg text-center">
+                <p>© {{ current_year }}, Flávia Lopes .Dev</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <button id="siteBtnUp" class="btn btn-icon btn-primary"><span class="site-icon site-icon-arrow-page-up"></span>
+    </button>
+
+</div>
+
+</body>
+</html>

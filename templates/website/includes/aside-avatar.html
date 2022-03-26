@@ -1,0 +1,28 @@
+        <!-- Foto Avatar-->
+        <div class="site-card-avatar">
+            <span class="site-avatar-state">
+                <span class="site-avatar-state1">
+                    <img class="avatar avatar-195" alt=""
+                         src="{{ card.avatar1.url }}"
+                         srcset="">
+                </span>
+                <span class="site-avatar-state2">
+                    <img class="avatar avatar-195" alt=""
+                         src="{{ card.avatar2.url }}"
+                         srcset="">
+                </span>
+            </span>
+        </div>
+        <!-- nome, título avatar-->
+        <div class="site-card-info clear-mrg"><h2 class="text-upper">{{ card.name_card }}</h2>
+            <p class="text-muted">{{ card.occupation }}</p>
+            <!-- redes sociais -->
+            <ul class="site-social clear-list">
+                {% for social, social_link in social_networks.items %}
+                    <li><a target="_blank" href="{{ social_link }}"><span
+                            class="site-icon site-icon-{{ social }}"></span></a>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>

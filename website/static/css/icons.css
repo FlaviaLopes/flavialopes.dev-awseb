@@ -1,0 +1,19 @@
+.site-icon-telegram:before {
+  content: "\ea95";
+}
+
+.site-icon-whatsapp:before {
+  content: "\ea93";
+}
+
+.site-icon-github:before {
+    content: "\eab0"
+}
+
+.site-icon-linkedin:before {
+    content: "\eac9"
+}
+
+.site-icon-instagram:before {
+    content: "\ea92"
+}
